@@ -1,0 +1,16 @@
+# Normalize line endings: store and check out LF everywhere for consistency
+# across machines. Shell scripts require LF; the rest of the project is happier
+# with it too.
+* text=auto eol=lf
+
+# Binary assets must never be line-ending converted.
+*.png  binary
+*.PNG  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary

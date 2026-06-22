@@ -1,0 +1,5 @@
+# Never serve the raw SMTP credentials file (defense in depth — PHP wouldn't
+# print it anyway, but this blocks access even if PHP is ever disabled).
+<Files "smtp-config.php">
+    Require all denied
+</Files>
